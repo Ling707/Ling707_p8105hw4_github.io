@@ -1,0 +1,16 @@
+---
+title: "p8105_hw4_index"
+author: "Ling"
+date: "10/31/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Ling's website for homework
+
+- As long as there is some text, right? I don't know what to put here.
+
+<img src="https://th.bing.com/th/id/R.4c3815212c6606e1acb91a788e01cdfc?rik=Q2OuQcyeshEHbg&riu=http%3a%2f%2fimg.wxcha.com%2fm00%2fd2%2f3d%2f776c5875f7970ad0c2e07b5e183233ff.jpg&ehk=diy3Ic35kydt%2b1xstxsTUKdr0Arq%2fNvbd5d4mlZlFc8%3d&risl=&pid=ImgRaw&r=0" style="width:75%">
