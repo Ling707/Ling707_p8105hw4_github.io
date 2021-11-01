@@ -1,8 +1,11 @@
 ---
-title: "p8105_hw4_index"
+title: "p8105_hw4_index page"
 author: "Ling"
 date: "10/31/2021"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}
@@ -10,6 +13,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Ling's website for homework
+
+- A brief introductory landing page
+  - This is a website for p8105 homework.
+  - Also, I want you to know how cute Linabell is. Disney, take my money!
+- Click [about me](about.html)to see my academic and professional experience.
+- My e-mail is on the navigation bar (upper right).
+- My Github page is beside my e-mail.
 
 - As long as there is some text, right? I don't know what to put here.
 
