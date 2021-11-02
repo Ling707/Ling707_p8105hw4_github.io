@@ -1,0 +1,19 @@
+---
+title: "p8105_hw4_flexdashboard"
+author: "Ling"
+date: "11/1/2021"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(p8105.datasets)
+library(tidyverse)
+library(plotly)
+library(flexdashboard)
+```
+
+# Flexdashboard using `Instacart` data

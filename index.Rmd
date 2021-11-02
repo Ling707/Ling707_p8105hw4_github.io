@@ -12,15 +12,19 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Ling's website for homework
+# Problem 1
 
 - A brief introductory landing page
   - This is a website for p8105 homework.
   - Also, I want you to know how cute Linabell is. Disney, take my money!
-- Click [about me](about.html)to see my academic and professional experience.
+- Click [about me](about.html) to see my academic and professional experience.
 - My e-mail is on the navigation bar (upper right).
 - My Github page is beside my e-mail.
 
+
+# Problem 2
+
+- The flexdashboard for problem 2 is [here](problem2.html)
 - As long as there is some text, right? I don't know what to put here.
 
 <img src="https://th.bing.com/th/id/R.4c3815212c6606e1acb91a788e01cdfc?rik=Q2OuQcyeshEHbg&riu=http%3a%2f%2fimg.wxcha.com%2fm00%2fd2%2f3d%2f776c5875f7970ad0c2e07b5e183233ff.jpg&ehk=diy3Ic35kydt%2b1xstxsTUKdr0Arq%2fNvbd5d4mlZlFc8%3d&risl=&pid=ImgRaw&r=0" style="width:75%">
