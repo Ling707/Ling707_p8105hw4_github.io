@@ -25,6 +25,8 @@ knitr::opts_chunk$set(echo = TRUE)
 # Problem 2
 
 - The flexdashboard for problem 2 is [here](problem2.html)
-- As long as there is some text, right? I don't know what to put here.
+- You can also see it at the navigation bar.
+
+- This is what you really want, right? I always get confused on the homework's instructions.
 
 <img src="https://th.bing.com/th/id/R.4c3815212c6606e1acb91a788e01cdfc?rik=Q2OuQcyeshEHbg&riu=http%3a%2f%2fimg.wxcha.com%2fm00%2fd2%2f3d%2f776c5875f7970ad0c2e07b5e183233ff.jpg&ehk=diy3Ic35kydt%2b1xstxsTUKdr0Arq%2fNvbd5d4mlZlFc8%3d&risl=&pid=ImgRaw&r=0" style="width:75%">

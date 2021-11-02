@@ -4,13 +4,14 @@ author: "Ling"
 date: "11/1/2021"
 output: 
   flexdashboard::flex_dashboard:
+    theme: simplex
     orientation: columns
     vertical_layout: fill
     source_code: embed
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 library(p8105.datasets)
 library(tidyverse)
 library(plotly)
@@ -19,6 +20,8 @@ library(flexdashboard)
 ```
 
 # Flexdashboard using `Instacart` data
+
+[Home](index.html)
 
 Column {data-width=650}
 -----------------------------------------------------------------------
