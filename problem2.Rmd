@@ -6,6 +6,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    source_code: embed
 ---
 
 ```{r setup, include=FALSE}
@@ -14,6 +15,62 @@ library(p8105.datasets)
 library(tidyverse)
 library(plotly)
 library(flexdashboard)
+
 ```
 
 # Flexdashboard using `Instacart` data
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+data("instacart")
+set.seed(5)
+insta_sample = instacart %>%
+  sample_n(5000, replace = F)
+
+insta_aisle = insta_sample %>%
+  group_by(aisle) %>%
+  summarise(items_sold = n()) %>%
+  mutate( aisle = as_factor(aisle),
+          aisle = fct_reorder(aisle, items_sold)) %>%
+  plot_ly(y = ~aisle, x = ~items_sold, color = ~aisle, type = "bar", colors = "viridis", orientation = "h") %>%
+    layout(title = "Sales Volume (random sample, n = 5,000)",
+           yaxis = list(title = "Aisle", font = list(size = 5)),
+           xaxis = list(title = "# items sold", font = list(size = 5)))
+insta_aisle
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+insta_reorder = insta_sample %>%
+  group_by(product_name, aisle) %>%
+  summarise(items_reordered = mean(reordered)) %>%
+  mutate(items_reordered = 100*items_reordered) %>%
+  plot_ly(y = ~aisle, x = ~items_reordered, type = "scatter", colors = "viridis", mode = "markers", orientation = "h") %>%
+  layout(title = "Reorder percentage for each product (random sample, n = 5,000)",
+           yaxis = list(title = "Aisle", font = list(size = 5)),
+           xaxis = list(title = "Reorder (%)", font = list(size = 5)))
+  
+insta_reorder
+```
+
+### Chart C
+
+```{r}
+insta_hr = insta_sample %>%
+  group_by(department, order_hour_of_day) %>%
+  summarise(items_ordered = n()) %>%
+  plot_ly(y = ~items_ordered, x = ~order_hour_of_day, color = ~department, type = "scatter", mode = "lines") %>%
+  layout(title = "Fluctuation of Items Ordered during a day (random sample, n = 5,000)",
+           yaxis = list(title = "# items sold", font = list(size = 5)),
+           xaxis = list(title = "time of the day (00:00-24:00)", font = list(size = 5)))
+
+insta_hr
+```
